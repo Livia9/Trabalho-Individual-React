@@ -7,8 +7,11 @@ export function HomePage() {
         <div>
             <Navbar />
             <h1> home</h1>
+            <p>Alterar Tema (Claro/Escuro)</p>
             <Button title="Questao1"> Questao1</Button>
+            <p>Mudar Texto com Botão</p>
             <Button title="Questao2"> Questao2</Button>
+            <p>Lista de Tarefas</p>
             <Button title="Questao3"> Questao3</Button>
 
             {/* ====  */}
@@ -19,7 +22,7 @@ export function HomePage() {
             />
 
             <footer className={styles.footer}>
-                <p>&copy; 2025 Serratec - Livia Raissinger</p>
+                <p>&copy; 2025 - Livia Raissinger</p>
             </footer>
         </div>
     )

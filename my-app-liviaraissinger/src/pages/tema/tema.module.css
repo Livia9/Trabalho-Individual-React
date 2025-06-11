@@ -1,0 +1,51 @@
+.fundoClaro,
+.fundoEscuro {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.fundoClaro {
+    background-color: white;
+    color: black;
+}
+
+.fundoEscuro {
+    background-color: black;
+    color: white;
+}
+
+.botaoClaro,
+.botaoEscuro {
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 2rem;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.botaoClaro {
+    background-color: black;
+    color: white;
+}
+
+.botaoEscuro {
+    background-color: white;
+    color: black;
+}
+
+.botaoEscuro:hover,
+.botaoClaro:hover {
+    transform: scale(1.2);
+}
+
+.conteudo {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}

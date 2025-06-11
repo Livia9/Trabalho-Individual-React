@@ -1,10 +1,9 @@
 import styles from './button.module.css'
 
-
-export function Button({ type, title, onClick }) {
+export function Button({ type, onClick, className, title, children }) {
   return (
     <button className={styles.button} onClick={onClick} type={type}>
-      {title}
+      {children || title}
     </button>
-  )
+  );
 }

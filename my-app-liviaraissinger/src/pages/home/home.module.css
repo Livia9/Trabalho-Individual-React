@@ -1,6 +1,24 @@
-.footer {
+.titulo {
+    font-size: 3rem;
     text-align: center;
-    color: white;
-    padding: 20px;
-    background-color: #24204b;
+    font-weight: bold;
+    color: #2e1bdd;
+    margin: 40px 20px 10px 20px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    /*pro footer nao escapar*/
+    align-items: center;
+    background-color: white;
+}
+
+.botoes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin: 40px 0;
 }

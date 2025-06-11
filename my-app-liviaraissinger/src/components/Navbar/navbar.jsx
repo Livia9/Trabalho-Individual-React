@@ -13,6 +13,7 @@ export function Navbar() {
                 className={styles.logo} />
 
             <ul className={styles.navItens}>
+                <li onClick={() => navigate("/")}>Home</li> 
                 <li onClick={() => navigate("/Questao1")}>Questao1</li>
                 <li onClick={() => navigate('/Questao2')}>Questao2</li>
                 <li onClick={() => navigate('/Questao3')}>Questao3</li>

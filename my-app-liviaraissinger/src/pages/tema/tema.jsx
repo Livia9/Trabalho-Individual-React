@@ -1,18 +1,30 @@
-import { Button } from "../../components/Button/button";
+import { Footer } from "../../components/Footer/footer";
+import { Navbar } from "../../components/Navbar/navbar";
+import styles from "./tema.module.css";
+import { useState } from "react";
 
 export function Questao1() {
+    const [temaClaro, setTemaClaro] = useState(true);
+
+    const alternarTema = () => {
+        setTemaClaro(!temaClaro);
+    };
+
     return (
-        <div>
-            <h1> questao 1 tema </h1>
-            <Button
-                type="button"
-                title="tema"
-                onClick={() => console.log('clicou no botão')}
-            />
+        <div className={temaClaro ? styles.fundoClaro : styles.fundoEscuro}>
+            <Navbar />
+
+            <main className={styles.conteudo}>
+                <h1>Questão 1 - Tema</h1>
+                <button
+                    onClick={alternarTema}
+                    className={temaClaro ? styles.botaoClaro : styles.botaoEscuro}
+                >
+                    {temaClaro ? "Tema Escuro" : "Tema Claro"}
+                </button>
+            </main>
+
+            <Footer />
         </div>
     )
 }
-// Crie um componente com:
-//  Um botão com o texto que muda entre "Tema Claro" e "Tema Escuro".
-// Ao clicar, o fundo da tela e o texto do botão devem alternar entre os dois
-// temas.
